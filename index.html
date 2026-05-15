@@ -4,13 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neha Jaiswal | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        html { scroll-behavior: smooth; }
+        
+        nav {
+            background: #fff;
+            height: 70px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { margin-left: 20px; }
+        .nav-links li a { text-decoration: none; color: #00aaff; font-weight: bold; }
+
+       
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #00aaff;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .about-box {
+            max-width: 800px;
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 40px;
+        }
+        .card { padding: 20px; border: 1px solid #ddd; border-radius: 10px; background: white; }
+
+        /* Contact Styling */
+        #contact { background: #fff; }
+        .footer { margin-top: 50px; color: #999; font-size: 0.9rem; }
+    </style>
 </head>
 <body>
 
     <nav>
         <div class="nav-container">
-            <span class="logo">Neha.Portfolio</span>
+            <span style="font-weight:bold; font-size:1.2rem;">Neha.Portfolio</span>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -19,55 +89,37 @@
         </div>
     </nav>
 
-    <section id="home" class="section-container">
-        <div class="content-center">
-            <img src="images/profile.jpeg" alt="Neha Jaiswal" class="profile-img">
-            <h1>Hi, I'm Neha Jaiswal</h1>
-            <p class="subtitle">Full Stack Java Developer Internship</p>
-            <div class="about-box">
-                <h2>About Me</h2>
-                <p>
-                    Hello! My name is Neha. I am from Laxmi Nagar, Delhi.
-                    Currently, I am pursuing BCA-MCA and studying in the 9th semester.
-                    I am interested in web development and learning new technologies.
-                    I enjoy creating websites and improving my technical skills.
-                </p>
-            </div>
+    <section id="home">
+        <img src="images/profile.jpeg" alt="Neha" class="profile-img">
+        <h1>Hi, I'm Neha Jaiswal</h1>
+        <p style="color: #666;">Full Stack Java Developer Internship</p>
+        <div class="about-box">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Neha. I am from Laxmi Nagar, Delhi.
+                Currently, I am pursuing BCA-MCA and studying in the 9th semester.
+                I am interested in web development and learning new technologies.
+            </p>
         </div>
     </section>
 
-    <section id="projects" class="section-container">
-        <div class="content-center">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="card">
-                    <h3>AI Student Monitoring</h3>
-                    <p>Secure student tracking and analytics system built using Python.</p>
-                </div>
-                <div class="card">
-                    <h3>Fraud Detection</h3>
-                    <p>Machine Learning model to identify fraudulent transactions.</p>
-                </div>
-                <div class="card">
-                    <h3>3D Holder</h3>
-                    <p>Functional design created using Autodesk Fusion 360.</p>
-                </div>
-            </div>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="card"><h3>AI Monitoring</h3><p>Secure tracking system.</p></div>
+            <div class="card"><h3>Fraud Detection</h3><p>ML based model.</p></div>
+            <div class="card"><h3>3D Design</h3><p>Autodesk Fusion 360.</p></div>
         </div>
     </section>
 
-    <section id="contact" class="section-container">
-        <div class="content-center">
-            <h2>Get In Touch</h2>
-            <div class="contact-info">
-                <p><strong>Email:</strong> nehajaiswal@gmail.com</p>
-                <p><strong>Location:</strong> Delhi, India</p>
-            </div>
-            <footer class="footer">
-                <p>© 2026 Neha Jaiswal. All rights reserved.</p>
-            </footer>
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p style="font-size:1.2rem; margin:10px 0;">Email: nehajaiswal@gmail.com</p>
+        <p style="font-size:1.2rem;">Location: Delhi, India</p>
+        <div class="footer">
+            <p>© 2026 Neha Jaiswal. All rights reserved.</p>
         </div>
     </section>
 
 </body>
-</html>   
+</html>
