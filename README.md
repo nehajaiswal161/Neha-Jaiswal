@@ -1,6 +1,6 @@
 # Week 1 Project: Responsive Personal Portfolio Website
 
-A professional and high-performance portfolio developed as part of the internship curriculum. This project serves as a comprehensive digital showcase of technical projects, skills, and academic achievements, built with a focus on modern web standards and responsive design.
+A professional and high-performance portfolio developed as part of my Full-Stack Java Developer Internship. This project serves as a comprehensive digital showcase of my technical projects, skills, and academic achievements.
 
 ---
 
@@ -8,21 +8,20 @@ A professional and high-performance portfolio developed as part of the internshi
 The objective of this project was to develop a seamless, end-to-end user experience that highlights my expertise in **Machine Learning** and **Web Development**. The site is optimized for performance and accessibility, ensuring a consistent look and feel across all device architectures.
 
 ## 2. Setup Instructions
-To run this project locally on your machine, follow these steps:
-1. **Clone/Download**: Download the repository as a ZIP file and extract the contents.
-2. **Directory Structure**: Ensure your folder hierarchy matches: `index.html` at the root, with `/css`, `/js`, and `/images` as subfolders.
-3. **Execution**: Right-click `index.html` and select **"Open with Live Server"** in VS Code, or double-click the file to launch it in any modern browser like Chrome or Edge.
+To run this project locally:
+1. **Clone/Download**: Download the repository as a ZIP file and extract it.
+2. **Directory Structure**: Ensure your folder hierarchy matches: `index.html` at the root, with `/css`, `/js`, and `/images` subfolders.
+3. **Execution**: Open `index.html` in any modern browser or use VS Code "Live Server".
 
 ## 3. Code Structure & Architecture
-The project follows a modular file hierarchy to ensure the codebase is scalable and easy to maintain:
-- **`index.html`**: The core structural file using semantic HTML5 elements for improved SEO and screen-reader accessibility.
-- **`css/style.css`**: The primary stylesheet for core layout rules and global theme definitions.
-- **`css/responsive.css`**: Dedicated media queries for fluid transitions between mobile, tablet, and desktop viewports.
-- **`js/navigation.js`**: A lightweight script for DOM manipulation, managing the mobile hamburger menu and smooth-scroll behavior.
-- **`images/`**: A centralized directory for optimized visual assets, including project thumbnails and the profile photograph.
+The project follows a modular hierarchy to ensure scalability:
+- **`index.html`**: Core structure using semantic HTML5 for SEO.
+- **`css/style.css`**: Primary stylesheet for layout and theme.
+- **`js/navigation.js`**: Managed DOM manipulation, including mobile menu behavior and **Client-side Form Validation**.
+- **`images/`**: Centralized directory for optimized visual assets.
 
 ## 4. Visual Documentation
-The website features a **Dynamic Grid Layout** for the projects section, utilizing CSS Grid to create a clean 3-column display on desktops that stacks vertically on mobile devices. Interactive hover effects and a professional color palette have been implemented to enhance user engagement.
+The website features a Dynamic Grid Layout for the projects section. Interactive hover effects and a professional color palette enhance user engagement.
 
 #### Home Page
 ![Home Page](websitehomepage.png)
@@ -30,23 +29,31 @@ The website features a **Dynamic Grid Layout** for the projects section, utilizi
 #### Projects Section
 ![Projects Section](myproject.png)
 
-#### Contact Section
-![Contact Section](contact.png)
+#### Contact & Validation
 
 ## 5. Technical Details
 - **Responsive Architecture**: Developed using a "Mobile-First" approach with **CSS Flexbox** and **Media Queries**.
-- **Project Integration**: Successfully showcased complex projects such as **Credit Card Fraud Detection** and **AI-Based Student Monitoring**.
-- **Clean Code**: Followed standard naming conventions and used CSS Variables for theme consistency.
+- **Form Validation**: Implemented custom JavaScript logic to validate user input (Name length, Email format) before submission.
+- **Project Integration**: Showcase of projects like **Credit Card Fraud Detection** and **AI-Based Student Monitoring**.
 
 ## 6. Testing & Validation Evidence
 | Feature | Test Performed | Expected Result | Status |
 | :--- | :--- | :--- | :--- |
-| **Responsive Layout** | Resizing browser from 1920px to 375px | Layout adjusts fluidly; Grid items stack vertically on mobile. | **Passed** |
-| **Mobile Navigation** | Clicking the Hamburger icon on mobile. | JavaScript toggles the menu visibility correctly. | **Passed** |
-| **Smooth Scrolling** | Clicking "Projects" in the navbar. | Page scrolls smoothly to the target section. | **Passed** |
-| **Asset Integrity** | Verifying image rendering from `/images`. | All project and profile images load correctly. | **Passed** |
+| **Form Validation** | Submitting empty or invalid email | Show custom red error messages via JS. | **Passed** |
+| **Submission Logic** | Submitting valid data | Clear form and show green success message. | **Passed** |
+| **Responsive Layout** | Resizing browser (1920px to 375px) | Layout adjusts fluidly; Grid items stack. | **Passed** |
+| **Smooth Scrolling** | Clicking Navbar links | Page scrolls smoothly to the target section. | **Passed** |
+
+### **Validation Screenshots:**
+Below is the evidence of the working JavaScript validation:
+
+**1. Validation Error (Invalid Input):**
+![Validation Error](contact1.png)
+
+**2. Success Message (Final Result):**
+![Success Result](finalresult.png)
 
 ---
 **Developer:** Neha Jaiswal  
 **Education:** BCA+MCA Dual Degree, Amity University (2027)  
-**Focus:**  Full-Stack java Development
+**Focus:** Full-Stack Java Development
