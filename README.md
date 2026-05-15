@@ -24,6 +24,15 @@ The project follows a modular file hierarchy to ensure the codebase is scalable 
 ## 4. Visual Documentation
 The website features a **Dynamic Grid Layout** for the projects section, utilizing CSS Grid to create a clean 3-column display on desktops that stacks vertically on mobile devices. Interactive hover effects and a professional color palette have been implemented to enhance user engagement.
 
+#### Home Page
+![Home Page](websitehomepage.png)
+
+#### Projects Section
+![Projects Section](myproject.png)
+
+#### Contact Section
+![Contact Section](contact.png)
+
 ## 5. Technical Details
 - **Responsive Architecture**: Developed using a "Mobile-First" approach with **CSS Flexbox** and **Media Queries**.
 - **Project Integration**: Successfully showcased complex projects such as **Credit Card Fraud Detection** and **AI-Based Student Monitoring**.
