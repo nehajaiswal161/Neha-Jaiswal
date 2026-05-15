@@ -50,19 +50,32 @@
             </div>
         </div>
     </section>
-
     <section id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="info-card">
-                <p><strong>Email:</strong> nehajaiswal@gmail.com</p>
-                <p><strong>Location:</strong> Delhi, India</p>
-            </div>
-            <footer class="footer">
-                <p>© 2026 Neha Jaiswal. All rights reserved.</p>
-            </footer>
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="info-card">
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required 
+                       style="width: 100%; margin-bottom: 15px; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                
+                <input type="email" id="email" placeholder="Your Email" required 
+                       style="width: 100%; margin-bottom: 15px; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                
+                <textarea id="message" placeholder="Your Message" required 
+                          style="width: 100%; margin-bottom: 15px; padding: 12px; border: 1px solid #ddd; border-radius: 8px; height: 100px;"></textarea>
+                
+                <button type="submit" style="background: #00aaff; color: white; border: none; padding: 12px 25px; cursor: pointer; border-radius: 8px; font-weight: bold; width: 100%;">
+                    Send Message
+                </button>
+            </form>
+            <p id="responseMsg" style="margin-top: 15px; font-weight: 600;"></p>
         </div>
-    </section>
+        
+        <footer class="footer">
+            <p>© 2026 Neha Jaiswal. All rights reserved.</p>
+        </footer>
+    </div>
+</section>
 
 </body>
 </html>
